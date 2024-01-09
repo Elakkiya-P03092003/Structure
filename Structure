@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct storekeeper{
+    int rno;
+    char author[50];
+    float price;
+};
+int main(){
+typedef struct storekeeper sk;
+    int n;
+    sk a[n];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i].rno);
+        scanf("%s",&a[i].author[50]);
+        scanf("%f",&a[i].price);
+    }
+    for(int i=0;i<n;i++){
+        printf("%d ",a[i].rno);
+        printf("%s ",a[i].author);
+        printf("%.2f ",a[i].price);
+    }
+    return 0;
+}
